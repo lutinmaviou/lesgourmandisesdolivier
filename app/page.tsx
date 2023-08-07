@@ -8,13 +8,13 @@ export default function Home() {
         className="grid background"
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(100%, auto))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(100vw, auto))',
         }}
       >
         <div className="back">
           <Image src="/fond.png" alt="Image de fond" fill sizes="100vw" />
         </div>
-        <h1 className="main-title">
+        <h1 className="agency main-title">
           Les Gourmandises d'<span className="red-letter">O</span>livier
         </h1>
         {/* <h4 className="contact">
