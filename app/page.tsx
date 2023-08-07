@@ -14,7 +14,7 @@ export default function Home() {
         <div className="back">
           <Image src="/fond.png" alt="Image de fond" fill sizes="100vw" />
         </div>
-        <h1 className="agency main-title">
+        <h1 className="main-title">
           Les Gourmandises d'<span className="red-letter">O</span>livier
         </h1>
         {/* <h4 className="contact">
