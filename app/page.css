@@ -1,0 +1,134 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back {
+  position: relative;
+  height: 40vh;
+}
+
+.main-title {
+  position: absolute;
+  color: white;
+  font-size: 7vw;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0.2vw 0.2vw 0.3vw black, -0.2vw -0.2vw 0.3vw black;
+}
+
+.contact {
+  position: relative;
+  top: -3vw;
+  color: white;
+  font-size: 1.3vw;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0.1vw 0.1vw 0.2vw black, -0.1vw -0.1vw 0.2vw black;
+  font-weight: 500;
+}
+
+.underline{
+  text-decoration: underline;
+  color: #e52822;
+}
+
+.red-letter {
+  color: #e52822;
+}
+
+.h2 {
+  color: rgb(72, 72, 72);
+  font-size: 3vw;
+  margin: 3vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw black;
+}
+
+.h3 {
+  color: #e26517;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+  text-shadow: 0.05vw 0.05vw 0.05vw #eec511;
+}
+
+/* .gif {
+  position: relative;
+  z-index: 10;
+  top: -5vw;
+  border-radius: 5vw;
+} */
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 13vw;
+  }
+  .h2 {
+    font-size: 5vw;
+    margin: 6vw;
+  }
+
+  .h3 {
+    font-size: 4vw;
+    margin-bottom: 8vw;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+/* @media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+} */
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
